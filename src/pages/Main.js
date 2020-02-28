@@ -1,7 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import {StyleSheet, Text, View, Image, ScrollView, Linking } from 'react-native';
 import CardView from 'react-native-rn-cardview';
-
 
 function Main() {
     const superHero = [
@@ -22,6 +21,7 @@ function Main() {
             avatar: 'https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2019/11/legiao_7Rn5yMXUptNzr1oQGw9b_gkeuvmaAH063FjiKIEcDC.png.jpeg'
         }
     ];
+
   return (
     <CardView cardElevation={4}
             maxCardElevation={4}
@@ -33,7 +33,7 @@ function Main() {
                     <View style={{padding:10}}>
                         <View>
                             <Image
-                                style={{width: 400, height: 600}}
+                                style={{height: 550}}
                                 source={{uri:hero.avatar}}
                             />
                         </View>
@@ -50,7 +50,6 @@ function Main() {
 
 const styles = StyleSheet.create({
     textFont: {
-      color: '#7D40E7',
       fontWeight: 'bold',
       fontSize: 40,
     }
